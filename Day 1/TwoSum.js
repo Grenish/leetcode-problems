@@ -14,3 +14,6 @@ var twoSum = function(nums, target) {
         seen.set(x, i);
     }
 };
+
+// Runtime: 63 ms
+// Memory usage: 51.61 MB
