@@ -1,2 +1,2 @@
 # leetcode-problems
-In this repo I'll try to solve every leetcode problmes everyday in JavaScript or TypeScript.
+In this repo I'll try to solve every leetcode problems everyday in JavaScript or TypeScript.
