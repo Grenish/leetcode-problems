@@ -1,5 +1,6 @@
-## Solution
-# Hash Table
+# Solution
+
+### Hash Table
 
 We can utilize a hash table called `seen` to store the array value along with its corresponding index.
 
