@@ -12,28 +12,28 @@
  */
 
 class ListNode {
-    constructor(val = 0, next = null) {
-        this.val = val;
-        this.next = next;
-    }
+  constructor(val = 0, next = null) {
+    this.val = val;
+    this.next = next;
+  }
 }
 
-var addTwoNumbers = function(l1, l2) {
-    const dum = new ListNode();
-    let carry = 0;
-    let fake = dum;
+var addTwoNumbers = function (l1, l2) {
+  const dum = new ListNode();
+  let carry = 0;
+  let fake = dum;
 
-    while(l1 || l2 || carry){
-        const sum = (l1?.val || 0) + (l2?.val || 0) + carry;
-        carry = Math.floor(sum / 10);
-        fake.next = new ListNode(sum % 10);
-        fake = fake.next;
+  while (l1 || l2 || carry) {
+    const sum = (l1?.val || 0) + (l2?.val || 0) + carry;
+    carry = Math.floor(sum / 10);
+    fake.next = new ListNode(sum % 10);
+    fake = fake.next;
 
-        l1 = l1?.next;
-        l2 = l2?.next;
-    }
+    l1 = l1?.next;
+    l2 = l2?.next;
+  }
 
-    return dum.next;
+  return dum.next;
 };
 
 // Runtime : 91 ms
